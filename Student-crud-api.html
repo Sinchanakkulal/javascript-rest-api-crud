@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST API Practice</title>
+</head>
+<body>
+
+    <h1>Student crud api practice with js</h1>
+
+    <h2>GET - View Users</h2>
+    <button onclick="getUsers()">Get Users</button>
+
+    <h2>GET - View Users with userId</h2>
+    <input id="getId" type="number" placeholder="User ID">
+    <button onclick="getUsersById()">Get Users</button>
+
+    <h2>POST - Create User</h2>
+    <input id="name" placeholder="Enter name">
+    <input id="email" placeholder="Enter email">
+    <button onclick="createUser()">Create User</button>
+
+    <h2>PUT - Update User</h2>
+    <input id="updateId" type="number" placeholder="User ID">
+    <input id="updateName" placeholder="New name">
+    <button onclick="updateUser()">Update User</button>
+
+    <h2>DELETE - Delete User</h2>
+    <input id="deleteId" type="number" placeholder="User ID">
+    <button onclick="deleteUser()">Delete User</button>
+
+    <h2>Output</h2>
+    <pre id="output">Your API response appears here.</pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
